@@ -1,0 +1,27 @@
+{
+    "name": "webpipe/webpipe-sdk",
+    "description": "Official PHP SDK for WebPipe.ai — turn any webpage into clean, structured data",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["webpipe", "scraping", "crawler", "markdown", "llm", "data-extraction"],
+    "require": {
+        "php": ">=8.1",
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webpipe\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webpipe\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

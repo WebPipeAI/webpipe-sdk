@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "webpipe-sdk"
+dynamic = ["version"]
+description = "Official Python SDK for WebPipe.ai — turn any webpage into clean, structured data"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "WebPipe.ai" }]
+keywords = ["webpipe", "scraping", "crawler", "markdown", "llm", "data-extraction"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Typing :: Typed",
+]
+dependencies = [
+    "httpx>=0.27",
+    "pydantic>=2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "pytest-asyncio>=0.23",
+    "respx>=0.21",
+    "ruff>=0.6",
+]
+
+[project.urls]
+Homepage = "https://webpipe.ai"
+Documentation = "https://webpipe.ai/docs/"
+Repository = "https://github.com/webpipe-ai/webpipe-sdk"
+
+[tool.hatch.version]
+path = "src/webpipe/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/webpipe"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+# We deliberately support py39: pydantic models cannot use PEP 604 unions
+# (`X | Y`) on 3.9, so typing.Optional/List style is intentional.
+# RUF022: __all__ is intentionally grouped by category with comments.
+ignore = ["FA100", "UP006", "UP007", "UP035", "PYI034", "RUF022"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

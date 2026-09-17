@@ -1,0 +1,9 @@
+{
+  "name": "webpipe-sdk-examples",
+  "private": true,
+  "type": "module",
+  "description": "Quickstart demos for the WebPipe JS SDK",
+  "dependencies": {
+    "webpipe-sdk": "file:../../packages/js"
+  }
+}

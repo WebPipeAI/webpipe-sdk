@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+dist/
+build/
+
+# Node
+node_modules/
+*.tsbuildinfo
+# examples 用 file: 本地依赖，lock 无意义
+examples/js/package-lock.json
+
+# PHP
+vendor/
+composer.lock
+.phpunit.result.cache
+
+# Java
+target/
+*.class
+
+# Rust（库项目惯例：lock 不入库）
+packages/rust/target/
+Cargo.lock
+
+# .NET
+bin/
+obj/
+
+# Ruby
+.bundle/
+
+# Go
+# (stdlib-only, no vendor)
+
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Env
+.env
+.env.*
+
+# 本地专用：内部笔记（API 怪癖/bug/测试账号），不入库
+AGENTS.local.md
+artifacts/
+
+# Ruby（gem 库惯例：lock 不入库）
+Gemfile.lock

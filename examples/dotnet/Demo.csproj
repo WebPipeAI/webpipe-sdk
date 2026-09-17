@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>12</LangVersion>
+  </PropertyGroup>
+
+  <!-- Local development: references the in-repo SDK project directly. -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\packages\dotnet\src\WebpipeSdk\WebpipeSdk.csproj" />
+  </ItemGroup>
+
+</Project>

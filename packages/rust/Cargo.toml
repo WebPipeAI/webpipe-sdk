@@ -1,0 +1,22 @@
+[package]
+name = "webpipe-sdk"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "Official Rust SDK for WebPipe.ai — turn any webpage into clean, structured data"
+license = "MIT"
+homepage = "https://webpipe.ai"
+keywords = ["webpipe", "scraping", "crawler", "markdown", "llm"]
+
+[dependencies]
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tokio = { version = "1", features = ["time"] }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+# Pin: 0.6.5+ uses let-chains (Rust >= 1.88). 0.6.3 is the newest that still
+# builds on our pinned toolchain (rust:1.86, see scripts/test.sh).
+wiremock = "=0.6.3"

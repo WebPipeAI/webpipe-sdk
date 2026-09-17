@@ -1,0 +1,17 @@
+{
+    "name": "webpipe/sdk-examples",
+    "description": "Quickstart demos for the WebPipe PHP SDK",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../packages/php",
+            "options": { "symlink": true }
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "webpipe/webpipe-sdk": "*"
+    }
+}
