@@ -34,7 +34,7 @@ dev = [
 [project.urls]
 Homepage = "https://webpipe.ai"
 Documentation = "https://webpipe.ai/docs/"
-Repository = "https://github.com/webpipe-ai/webpipe-sdk"
+Repository = "https://github.com/WebPipeAI/webpipe-sdk"
 
 [tool.hatch.version]
 path = "src/webpipe/_version.py"
