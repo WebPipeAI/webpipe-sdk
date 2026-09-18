@@ -55,7 +55,7 @@ await session.close();
 **Go**
 
 ```go
-import webpipe "github.com/webpipe-ai/webpipe-sdk/packages/go"
+import webpipe "github.com/WebPipeAI/webpipe-sdk/packages/go"
 
 client, _ := webpipe.NewClient() // reads WEBPIPE_API_KEY
 

@@ -5,7 +5,7 @@ Official Go SDK for [WebPipe.ai](https://webpipe.ai/) — turn any webpage into 
 ## Install
 
 ```bash
-go get github.com/ydyyes123/webpipe_sdk/packages/go
+go get github.com/WebPipeAI/webpipe-sdk/packages/go
 ```
 
 **Zero dependencies** — standard library only. Requires Go ≥ 1.22.
@@ -20,7 +20,7 @@ import (
     "fmt"
     "log"
 
-    webpipe "github.com/ydyyes123/webpipe_sdk/packages/go"
+    webpipe "github.com/WebPipeAI/webpipe-sdk/packages/go"
 )
 
 func main() {

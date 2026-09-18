@@ -1,3 +1,3 @@
-module github.com/ydyyes123/webpipe_sdk/packages/go
+module github.com/WebPipeAI/webpipe-sdk/packages/go
 
 go 1.22

@@ -11,7 +11,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	webpipe "github.com/ydyyes123/webpipe_sdk/packages/go"
+	webpipe "github.com/WebPipeAI/webpipe-sdk/packages/go"
 )
 
 // newTestClient builds a client pointed at the test server.
